@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Тестовое задание</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css"
+		integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js"
+		integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+	<header class="header">
+
+		<section class="container-1">
+			<h1 class="visually-hidden">Соцсеть</h1>
+			<div class="header__flex flex">
+				<div class="header__logo">
+					<img src="img/Group 590.svg" alt="logo" class="logo">
+				</div>
+				<div class="header__nav">
+					<ul class="header__list list-reset flex">
+						<li class="header__items"><a class="header__items-link" href="#">Мероприятия</a></li>
+						<li class="header__items"><a class="header__items-link" href="#">Трансляции</a></li>
+						<li class="header__items"><a class="header__items-link" href="#">Публикации</a></li>
+						<li class="header__items"><a class="header__items-link" href="#">Маркетологи</a></li>
+					</ul>
+				</div>
+				<button class="header__btn-search btn-reset">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M8.81927 0C3.95637 0 0 3.95507 0 8.81642C0 13.6778 3.95641 17.6328 8.81927 17.6328C13.6821 17.6328 17.6386 13.6778 17.6386 8.81642C17.6386 3.95507 13.6822 0 8.81927 0ZM8.81927 16.1835C4.75349 16.1835 1.44578 12.8785 1.44578 8.81639C1.44578 4.75406 4.75349 1.44923 8.81927 1.44923C12.8851 1.44923 16.1928 4.75406 16.1928 8.81639C16.1928 12.8785 12.8851 16.1835 8.81927 16.1835Z"
+							fill="#1C2027" />
+						<path
+							d="M19.7869 18.7616L15.0399 14.0273C14.7567 13.7452 14.2991 13.7464 14.0174 14.0299C13.736 14.3137 13.7372 14.7724 14.0201 15.0548L18.7671 19.7891C18.9083 19.9297 19.0924 20 19.277 20C19.4628 20 19.6483 19.9287 19.7895 19.7865C20.071 19.5026 20.0698 19.0439 19.7869 18.7616Z"
+							fill="#1C2027" />
+					</svg>
+				</button>
+				<button class="header__btn-reg btn-reset">
+					Регистрация
+				</button>
+				<button class="header__btn-in btn-reset">
+					Вход
+				</button>
+			</div>
+		</section>
+
+	</header>
+
+	<main class="main">
+
+		<section class="hero">
+			<div class="container-1">
+				<div class="hero__links">
+					<ul class="hero__list list-reset flex">
+						<li class="hero__item flex">
+							<a class="hero__link" href="#">Главная</a>
+							<svg class="hero__img-arr" width="7" height="13" viewBox="0 0 7 13" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.188785 12.8081L0.546256 12.4585C0.485187 12.3961 0.485815 12.2913 0.545814 12.2301L0.546214 12.2297L5.80932 6.84931L6.15135 6.49966L5.80929 6.15002L0.545559 0.769602L0.54518 0.769215C0.485024 0.707859 0.484941 0.60368 0.54493 0.542205C0.600673 0.48569 0.685191 0.486331 0.739727 0.541735C0.739798 0.541806 0.739868 0.541878 0.739938 0.541949L6.45677 6.38568L6.45712 6.38604C6.48214 6.41156 6.49998 6.45135 6.5 6.50004C6.50002 6.54865 6.48227 6.58877 6.4571 6.61469C6.45703 6.61476 6.45697 6.61483 6.4569 6.61489L0.740571 12.4581C0.740529 12.4581 0.740486 12.4581 0.740444 12.4582C0.685602 12.514 0.600609 12.5139 0.545814 12.4581L0.188785 12.8081ZM0.188785 12.8081C0.439653 13.064 0.846732 13.064 1.0976 12.8081L6.81482 6.96403L1.09697 0.191906C0.846099 -0.0639677 0.439652 -0.0639677 0.188151 0.191906C-0.0627165 0.44778 -0.0627165 0.863385 0.188151 1.11926L5.45189 6.49968L0.188785 11.8801C-0.0620828 12.136 -0.0620828 12.5516 0.188785 12.8081Z"
+									stroke="#1C2027" />
+							</svg>
+						</li>
+						<li class="hero__item flex">
+							<a class="hero__link" href="#">Маркетологи</a>
+							<svg class="hero__img-arr" width="7" height="13" viewBox="0 0 7 13" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M0.188785 12.8081L0.546256 12.4585C0.485187 12.3961 0.485815 12.2913 0.545814 12.2301L0.546214 12.2297L5.80932 6.84931L6.15135 6.49966L5.80929 6.15002L0.545559 0.769602L0.54518 0.769215C0.485024 0.707859 0.484941 0.60368 0.54493 0.542205C0.600673 0.48569 0.685191 0.486331 0.739727 0.541735C0.739798 0.541806 0.739868 0.541878 0.739938 0.541949L6.45677 6.38568L6.45712 6.38604C6.48214 6.41156 6.49998 6.45135 6.5 6.50004C6.50002 6.54865 6.48227 6.58877 6.4571 6.61469C6.45703 6.61476 6.45697 6.61483 6.4569 6.61489L0.740571 12.4581C0.740529 12.4581 0.740486 12.4581 0.740444 12.4582C0.685602 12.514 0.600609 12.5139 0.545814 12.4581L0.188785 12.8081ZM0.188785 12.8081C0.439653 13.064 0.846732 13.064 1.0976 12.8081L6.81482 6.96403L1.09697 0.191906C0.846099 -0.0639677 0.439652 -0.0639677 0.188151 0.191906C-0.0627165 0.44778 -0.0627165 0.863385 0.188151 1.11926L5.45189 6.49968L0.188785 11.8801C-0.0620828 12.136 -0.0620828 12.5516 0.188785 12.8081Z"
+									stroke="#1C2027" />
+							</svg>
+						</li>
+						<li class="hero__item flex">
+							<a class="hero__link" href="#">Александр Сергеевич Сенцов</a>
+						</li>
+					</ul>
+				</div>
+				<div class="hero__inf flex">
+					<div class="hero__block flex">
+						<div class="hero__info">
+							<h2 class="hero__title">ФИО</h2>
+							<h3 class="hero__title-name">Александр Сергеевич Сенцов</h3>
+							<p class="hero__certificates">Сертификаты и&nbsp;грамоты</p>
+						</div>
+						<div class="text-center my-3">
+							<div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+								<div class="carousel-inner w-100" role="listbox">
+									<div class="carousel-item row no-gutters active">
+										<div class="col-3 float-left">
+											<img class="img-fluid" src="img/card1.png">
+										</div>
+										<div class="col-3 float-left">
+											<img class="img-fluid" src="img/card2.png">
+										</div>
+										<div class="col-3 float-left">
+											<img class="img-fluid" src="img/card3.png">
+										</div>
+										<div class="col-3 float-left">
+											<img class="img-fluid" src="img/card4.png">
+										</div>
+									</div>
+									<div class="carousel-item row no-gutters">
+										<div class="col-3 float-left">
+											<img class="img-fluid" src="img/card4.png">
+										</div>
+										<div class="col-3 float-left">
+											<img class="img-fluid" src="img/card3.png">
+										</div>
+										<div class="col-3 float-left">
+											<img class="img-fluid" src="img/card2.png">
+										</div>
+										<div class="col-3 float-left">
+											<img class="img-fluid" src="img/card1.png">
+										</div>
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="hero__cart flex">
+						<div class="hero__cart-img">
+							<img class="hero__cart-img-1" src="img/face.png" alt="Аватарка">
+						</div>
+						<p class="hero__cart-info">Эксперт AI&nbsp;and Data</p>
+						<p class="hero__cart-place flex"><svg style="margin-right: 10px;" width="17" height="22"
+								viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M8.50001 1.00002C4.36449 1.00002 1 4.37667 1 8.52709C1 9.06844 1.05767 9.60912 1.17139 10.1341C1.22301 10.3726 1.45311 11.1094 1.47767 11.1749C1.88067 12.2328 2.47556 13.1347 3.22605 13.8781L2.16175 12.5528C2.24973 12.692 7.53065 20.4846 7.53065 20.4846C7.74448 20.7975 8.09831 21 8.49916 21C8.49948 21 8.49978 21 8.5001 21C8.50031 21 8.50063 21 8.50092 21C8.90179 21 9.25565 20.7975 9.46691 20.4885C9.67818 20.1796 15.0713 12.1584 15.0967 12.1114C15.5154 11.3511 15.8131 10.4632 15.9369 9.52016C15.4301 11.4099 15.7437 10.5262 15.8287 10.134C15.9376 9.65134 16 9.09702 16 8.52803C16 8.52769 16 8.52737 16 8.52703C16 4.37665 12.6355 1 8.49999 1L8.50001 1.00002ZM14.9789 9.94769C14.9039 10.2936 14.627 11.074 14.6052 11.1255C14.5223 11.3212 14.2872 11.7761 14.2638 11.8173C14.2169 11.8998 8.75062 19.992 8.75062 19.992C8.66942 20.1119 8.54836 20.1249 8.50003 20.1249C8.4517 20.1249 8.33069 20.1119 8.24955 19.9921C8.24955 19.9921 2.96485 12.1938 2.88144 12.0606L2.87413 12.0489C2.3913 11.2852 2.0543 10.381 1.9259 9.41043C2.27017 10.8091 2.06677 10.1579 2.02124 9.94782C1.92498 9.52137 1.86982 9.03165 1.86982 8.52897C1.86982 8.52833 1.86982 8.52767 1.86982 8.52703C1.86977 4.8592 4.8441 1.87511 8.50001 1.87511C12.1559 1.87511 15.1302 4.8592 15.1302 8.52707C15.1302 9.00571 15.0793 9.48373 14.9789 9.94767V9.94769Z"
+									fill="#8D8DA2" stroke="#8D8DA2" stroke-width="0.3" />
+								<path
+									d="M8.49991 5.33671C7.65118 5.33671 6.85315 5.66842 6.25297 6.27072C5.65239 6.87332 5.32166 7.67466 5.32166 8.5271C5.32166 8.75957 5.34614 8.99046 5.39445 9.21341C5.47155 9.5695 5.60958 9.90807 5.80485 10.22C6.04016 10.5913 6.33683 10.9011 6.68366 11.1432L5.9325 10.4083C6.22339 10.807 6.60683 11.1374 7.04146 11.3636C7.49279 11.5985 7.98352 11.7177 8.5 11.7177C9.01626 11.7177 9.50689 11.5985 9.95832 11.3636C10.5841 11.0318 11.0769 10.5181 11.3759 9.89277L11.0694 10.4056C11.3053 10.0864 11.4835 9.70878 11.58 9.29934C11.3902 9.9083 11.5284 9.56933 11.6056 9.21272C11.6518 9.00741 11.6783 8.77162 11.6783 8.5296C11.6783 8.5287 11.6783 8.52783 11.6783 8.52693C11.6783 7.67474 11.3476 6.87345 10.747 6.27077C10.1466 5.66843 9.34862 5.33667 8.49993 5.33667L8.49991 5.33671ZM10.7557 9.02644C10.6717 9.40477 10.5039 9.73499 10.2725 10.0091C10.2986 10.0078 10.0961 10.2196 9.85917 10.385L10.3663 9.89025C10.1543 10.1809 9.87489 10.4217 9.55853 10.5864C9.23188 10.7564 8.87575 10.8426 8.49993 10.8426C8.12393 10.8426 7.76767 10.7564 7.44106 10.5864C7.12485 10.4218 6.84566 10.1812 6.63369 9.89061L6.28308 10.1495L6.63108 9.88707C6.59967 9.84402 6.51066 9.70457 6.49639 9.67985C6.33239 9.40071 6.22511 9.06958 6.19895 8.71573C6.21069 8.87766 6.19143 8.70599 6.19143 8.52984C6.19143 8.5289 6.19143 8.52795 6.19143 8.52704C6.19143 7.90897 6.43141 7.32767 6.86717 6.89042C7.30322 6.45286 7.88306 6.21191 8.49991 6.21191C9.11672 6.21191 9.6966 6.4529 10.1327 6.8905C10.5685 7.3278 10.8084 7.90903 10.8084 8.52716C10.8084 8.69697 10.7906 8.86497 10.7557 9.02646V9.02644Z"
+									fill="#8D8DA2" stroke="#8D8DA2" stroke-width="0.3" />
+							</svg>
+							Челябинск</p>
+						<a class="hero__btn" href="#"><button class="hero__btn-1">Написать</button></a>
+						<div class="hero__links flex">
+							<a class="hero__link" href="#">
+								<svg class="hero__link-svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<circle cx="20" cy="20" r="20" fill="#01142F" />
+									<path
+										d="M29.1002 16.0144C29.2333 15.5666 29.1002 15.2383 28.4704 15.2383H26.3844C25.8536 15.2383 25.6111 15.5223 25.4779 15.8343C25.4779 15.8343 24.4173 18.4524 22.9144 20.15C22.4292 20.644 22.2076 20.8 21.9432 20.8C21.8109 20.8 21.6188 20.644 21.6188 20.1962V16.0144C21.6188 15.4771 21.4657 15.2383 21.0233 15.2383H17.7454C17.4144 15.2383 17.2146 15.4867 17.2146 15.7236C17.2146 16.232 17.9661 16.3495 18.0432 17.7823V20.8905C18.0432 21.5713 17.9224 21.6955 17.656 21.6955C16.9493 21.6955 15.2294 19.0677 14.2088 16.0596C14.01 15.4752 13.8093 15.2392 13.2766 15.2392H11.1915C10.5951 15.2392 10.4762 15.5233 10.4762 15.8353C10.4762 16.3957 11.183 19.1688 13.7684 22.8365C15.492 25.341 17.9185 26.6987 20.1292 26.6987C21.4542 26.6987 21.6178 26.3973 21.6178 25.8774V23.9843C21.6178 23.3815 21.7444 23.2602 22.1638 23.2602C22.472 23.2602 23.0028 23.4181 24.2404 24.6246C25.6539 26.0555 25.8879 26.6977 26.6821 26.6977H28.7672C29.3627 26.6977 29.6604 26.3964 29.4892 25.8013C29.3018 25.2091 28.6264 24.3473 27.7304 23.3276C27.2434 22.746 26.5157 22.1201 26.2941 21.8072C25.9849 21.4037 26.0743 21.2256 26.2941 20.8674C26.295 20.8684 28.8357 17.2459 29.1002 16.0144Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="#" class="hero__link">
+								<svg class="hero__link-svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<circle cx="20" cy="20" r="20" fill="#01142F" />
+									<path
+										d="M26.1483 14.5503L23.7715 25.8967C23.5921 26.6974 23.1246 26.8967 22.4602 26.5197L18.8385 23.8182L17.0912 25.5198C16.8977 25.7157 16.7362 25.8791 16.3633 25.8791L16.6237 22.1457L23.3356 16.0064C23.6275 15.7433 23.272 15.5969 22.8821 15.8606L14.5845 21.1497L11.0122 20.0176C10.2353 19.7722 10.2213 19.2312 11.1743 18.8537L25.1464 13.4045C25.7934 13.1591 26.3593 13.5503 26.1483 14.5508V14.5503Z"
+										fill="white" />
+								</svg>
+							</a>
+							<a href="#" class="hero__link">
+								<svg class="hero__link-svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect width="40" height="40" rx="20" fill="#01142F" />
+									<path
+										d="M24.75 17.5H21.5625V15.5C21.5625 14.948 22.0385 14.5 22.625 14.5H23.6875V12H21.5625C19.8019 12 18.375 13.343 18.375 15V17.5H16.25V20H18.375V28H21.5625V20H23.6875L24.75 17.5Z"
+										fill="white" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="form">
+			<div class="container-1">
+				<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form__block">
+					<select class="form__select" id="courses" name="student_courses">
+						<option value="recomendation" disabled selected>Рекомендации</option>
+						<option value="computer_engineering">Computer Science Engineering</option>
+						<option value="slectrical_engineering">Data scientist</option>
+						<option value="mechanical_engineering">Full-stack developer</option>
+						<option value="civil_engineering">QA engeneer</option>
+					</select>
+				</form>
+			</div>
+		</section>
+
+		<section class="workers">
+			<div class="container-1">
+				<div class="workers__images flex">
+					<img src="img/1-worker.svg" alt="" class="workers__img">
+					<img src="img/2-worker.svg" alt="" class="workers__img">
+					<img src="img/3-worker.svg" alt="" class="workers__img">
+					<img src="img/4-worker.svg" alt="" class="workers__img">
+					<img src="img/5-worker.svg" alt="" class="workers__img">
+					<img src="img/6-worker.svg" alt="" class="workers__img">
+					<img src="img/7-worker.svg" alt="" class="workers__img">
+					<img src="img/8-worker.svg" alt="" class="workers__img">
+				</div>
+			</div>
+		</section>
+
+		<section class="info">
+			<div class="container-1">
+				<div class="info__block flex">
+					<div class="info__left">
+						<h2 class="info__left-title">Статьи эксперта</h2>
+						<div class="info__left-top">
+							<p class="info__theme-autor flex">Автор: Александр Сенцов<span class="info__theme-date">2021</span></p>
+							<a href="#"><p class="info__theme-name">Эксклюзивный рекламный бриф: основные моменты</p></a>
+						</div>
+						<div class="info__left-top">
+							<p class="info__theme-autor flex">Автор: Александр Сенцов<span class="info__theme-date">2021</span></p>
+							<a href="#"><p class="info__theme-name">Ролевой нестандартный подход: предпосылки и&nbsp;развитие</p></a>
+						</div>
+						<div class="info__left-top-last">
+							<p class="info__theme-autor flex">Автор: Александр Сенцов<span class="info__theme-date">2021</span></p>
+							<a href="#"><p class="info__theme-name">Институциональный имидж предприятия: лидерство в&nbsp;продажах или перераспределение бюджета?</p></a>
+						</div>
+						<h2 class="info__left-title">Все статьи</h2>
+						<div class="info__left-bottom">
+							<p class="info__theme-autor flex">Автор: Андрей Кузнецов<span class="info__theme-date">2021</span></p>
+							<a href="#"><p class="info__theme-name">Построение бренда как VIP-мероприятие</p></a>
+						</div>
+						<div class="info__left-bottom">
+							<p class="info__theme-autor flex">Автор: Андрей Кузнецов<span class="info__theme-date">2021</span></p>
+							<a href="#"><p class="info__theme-name">Конвергентный рекламоноситель: мониторинг активности или ценовая стратегия?</p></a>
+						</div>
+					</div>
+					<div class="info__right">
+						<h2 class="info__right-title">Кейсы</h2>
+						<ul class="info__cards list-reset flex">
+							<li class="info__card first flex">
+								<div class="info__card-content">
+									<img src="img/case-notebook.png" alt="" class="info__img">
+									<p class="info__card-player">Участник</p>
+									<p class="info__card-title">Коллаборация. Стартовая конференция рационализаторов</p>
+									<p class="info__card-date">8&nbsp;октября, с&nbsp;10:00 до&nbsp;12:00</p>
+									<p class="info__card-city">Челябинск</p>
+								</div>
+							</li>
+							<li class="info__card second flex">
+								<div class="info__card-content">
+									<img src="img/case-brain.png" alt="" class="info__img">
+									<p class="info__card-player">Участник</p>
+									<p class="info__card-title">Открытие клуба Мышления Творцы Будущего (Shapers of&nbsp;the future)</p>
+									<p class="info__card-date">21&nbsp;октября, с&nbsp;10:00 до&nbsp;12:00</p>
+									<p class="info__card-city">Челябинск</p>
+								</div>
+							</li>
+							<li class="info__card third flex">
+								<div class="info__card-content">
+									<img src="img/case-table.png" alt="" class="info__img">
+									<p class="info__card-player">Участник</p>
+									<p class="info__card-title third">История стартапа</p>
+									<p class="info__card-date">11&nbsp;октября, с&nbsp;10:00 до&nbsp;12:00</p>
+									<p class="info__card-city">Челябинск</p>
+								</div>
+							</li>
+							<li class="info__card fourth flex">
+								<div class="info__card-content">
+									<img src="img/case-conversation.png" alt="" class="info__img">
+									<p class="info__card-player">Участник</p>
+									<p class="info__card-title">Стартап от&nbsp;0&nbsp;до&nbsp;100 миллионов долларов</p>
+									<p class="info__card-date">11&nbsp;октября, с&nbsp;10:00 до&nbsp;12:00</p>
+									<p class="info__card-city">Челябинск</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+</body>
+
+</html>
